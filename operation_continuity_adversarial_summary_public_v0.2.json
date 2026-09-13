@@ -1,0 +1,36 @@
+{
+  "version": "OPERATION_CONTINUITY_ADVERSARIAL_RESULTS_PUBLIC_v0.2",
+  "date": "2026-09-13",
+  "seed_documented_for_original_run": 20260913,
+  "cases": 500,
+  "dataset_type": "synthetic",
+  "production_validation": false,
+  "confusion_matrix": {
+    "tp": 88,
+    "fp": 129,
+    "tn": 268,
+    "fn": 15
+  },
+  "counterexamples_or_errors": 144,
+  "metrics": {
+    "precision": 0.4055,
+    "recall": 0.8544,
+    "false_positive_rate": 0.3249
+  },
+  "scope": {
+    "baseline": "simple similarity-based operation-continuity matcher",
+    "result": "this specific baseline was falsified under the designed synthetic test distribution",
+    "refusal_feature_used": false,
+    "refusal_trigger_validity": "UNTESTED / UNVALIDATED",
+    "production_relevance": "UNKNOWN",
+    "independent_validation": "NONE",
+    "full_original_run_reproducibility": "NOT DEMONSTRATED"
+  },
+  "warnings": [
+    "These metrics describe one designed synthetic distribution only.",
+    "They are not measurements of any production AI system.",
+    "They do not estimate real-world prevalence or provider failure rates.",
+    "The synthetic ground-truth generator is not independently validated.",
+    "The complete original executable generator source was not preserved exactly as used for the initial run."
+  ]
+}
